@@ -1,0 +1,1865 @@
+16-Nov-2020 13:44:11.097 심각 [http-nio-8215-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 45 in the jsp file: /notice/notice_delete_action.jsp
+The method setString(int, String) in the type PreparedStatement is not applicable for the arguments (int, int)
+42: 
+43: 		String sqlDeleteNotice = "Delete From notice Where notice_uid=?";
+44: 		pstmt = conn.prepareStatement(sqlDeleteNotice);
+45: 		pstmt.setString(1, noticeid);
+46: 		pstmt.executeUpdate();
+47: 		pstmt.close();
+48: 
+
+
+An error occurred at line: 51 in the jsp file: /notice/notice_delete_action.jsp
+The method setString(int, String) in the type PreparedStatement is not applicable for the arguments (int, int)
+48: 
+49: 		String sqlDeleteNoticeImg = "Delete From noticeimg Where notice_uid=?";
+50: 		pstmt = conn.prepareStatement(sqlDeleteNoticeImg);
+51: 		pstmt.setString(1, noticeid);
+52: 		pstmt.executeUpdate();
+53: 		pstmt.close();
+54: 			
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 45 in the jsp file: /notice/notice_delete_action.jsp
+The method setString(int, String) in the type PreparedStatement is not applicable for the arguments (int, int)
+42: 
+43: 		String sqlDeleteNotice = "Delete From notice Where notice_uid=?";
+44: 		pstmt = conn.prepareStatement(sqlDeleteNotice);
+45: 		pstmt.setString(1, noticeid);
+46: 		pstmt.executeUpdate();
+47: 		pstmt.close();
+48: 
+
+
+An error occurred at line: 51 in the jsp file: /notice/notice_delete_action.jsp
+The method setString(int, String) in the type PreparedStatement is not applicable for the arguments (int, int)
+48: 
+49: 		String sqlDeleteNoticeImg = "Delete From noticeimg Where notice_uid=?";
+50: 		pstmt = conn.prepareStatement(sqlDeleteNoticeImg);
+51: 		pstmt.setString(1, noticeid);
+52: 		pstmt.executeUpdate();
+53: 		pstmt.close();
+54: 			
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 13:54:37.037 심각 [http-nio-8215-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 64 in the jsp file: /notice/notice_delete_action.jsp
+NoticeImg_Id cannot be resolved to a variable
+61: 		String NoticeImg_ChangeName = rs.getString(4);
+62: 		String NoticeImg_SavePath = rs.getString(5);
+63: 	}		
+64: out.print(NoticeImg_Id + "<br>");
+65: 		
+66: 		out.println("<script>");
+67: 		out.println("alert('해당 공지사항이 삭제되었습니다.')");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 64 in the jsp file: /notice/notice_delete_action.jsp
+NoticeImg_Id cannot be resolved to a variable
+61: 		String NoticeImg_ChangeName = rs.getString(4);
+62: 		String NoticeImg_SavePath = rs.getString(5);
+63: 	}		
+64: out.print(NoticeImg_Id + "<br>");
+65: 		
+66: 		out.println("<script>");
+67: 		out.println("alert('해당 공지사항이 삭제되었습니다.')");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 13:55:06.822 심각 [http-nio-8215-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 63 in the jsp file: /notice/notice_delete_action.jsp
+NoticeImg_Id cannot be resolved to a variable
+60: 		Integer NoticeImg_Id = rs.getInt(2);
+61: 		
+62: 	}		
+63: out.print(NoticeImg_Id + "<br>");
+64: 		
+65: 		out.println("<script>");
+66: 		out.println("alert('해당 공지사항이 삭제되었습니다.')");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 63 in the jsp file: /notice/notice_delete_action.jsp
+NoticeImg_Id cannot be resolved to a variable
+60: 		Integer NoticeImg_Id = rs.getInt(2);
+61: 		
+62: 	}		
+63: out.print(NoticeImg_Id + "<br>");
+64: 		
+65: 		out.println("<script>");
+66: 		out.println("alert('해당 공지사항이 삭제되었습니다.')");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 13:56:14.218 심각 [http-nio-8215-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 63 in the jsp file: /notice/notice_delete_action.jsp
+NoticeImg_Id cannot be resolved to a variable
+60: 		String NoticeImg_Id = rs.getString(2);
+61: 		
+62: 	}		
+63: out.print(NoticeImg_Id + "<br>");
+64: 		
+65: 		out.println("<script>");
+66: 		out.println("alert('해당 공지사항이 삭제되었습니다.')");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 63 in the jsp file: /notice/notice_delete_action.jsp
+NoticeImg_Id cannot be resolved to a variable
+60: 		String NoticeImg_Id = rs.getString(2);
+61: 		
+62: 	}		
+63: out.print(NoticeImg_Id + "<br>");
+64: 		
+65: 		out.println("<script>");
+66: 		out.println("alert('해당 공지사항이 삭제되었습니다.')");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 13:56:55.111 심각 [http-nio-8215-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 70 in the jsp file: /notice/notice_delete_action.jsp
+Syntax error, insert "}" to complete Block
+67: 		out.println("location.href='notice_list.jsp';");
+68: 		out.println("</script>");
+69: 
+70: 	}catch(Exception e){//에러가 났을 때 나오는 메시지
+71: 		e.printStackTrace();
+72: 	}finally{
+73: 		if(pstmt != null)
+
+
+An error occurred at line: [228] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fdelete_005faction_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [229] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fdelete_005faction_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 70 in the jsp file: /notice/notice_delete_action.jsp
+Syntax error, insert "}" to complete Block
+67: 		out.println("location.href='notice_list.jsp';");
+68: 		out.println("</script>");
+69: 
+70: 	}catch(Exception e){//에러가 났을 때 나오는 메시지
+71: 		e.printStackTrace();
+72: 	}finally{
+73: 		if(pstmt != null)
+
+
+An error occurred at line: [228] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fdelete_005faction_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [229] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fdelete_005faction_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 14:59:12.443 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 16 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+13: 	int max = 1024 * 1024 * 80; //업로드 받을 이미지의 최대 크기 10Mb로 용량 제한
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+DefaultFileRenamePolicy cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 52 in the jsp file: /notice/notice_modify_action.jsp
+cal cannot be resolved
+49: 			String sql = "UPDATE notice set "
+50: 				   	+ 	 "notice_title ='" + Notice_Title
+51: 					+	 "', notice_content = '" + Notice_Content
+52: 					+ 	 ", notice_date ='" + sdf.format(cal.getTime())
+53: 					+	 "' where notice_uid ='" + noticeid
+54: 					+	 "'";
+55: 			
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 16 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+13: 	int max = 1024 * 1024 * 80; //업로드 받을 이미지의 최대 크기 10Mb로 용량 제한
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+DefaultFileRenamePolicy cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 52 in the jsp file: /notice/notice_modify_action.jsp
+cal cannot be resolved
+49: 			String sql = "UPDATE notice set "
+50: 				   	+ 	 "notice_title ='" + Notice_Title
+51: 					+	 "', notice_content = '" + Notice_Content
+52: 					+ 	 ", notice_date ='" + sdf.format(cal.getTime())
+53: 					+	 "' where notice_uid ='" + noticeid
+54: 					+	 "'";
+55: 			
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 15:05:33.773 심각 [http-nio-8215-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 16 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+13: 	int max = 1024 * 1024 * 80; //업로드 받을 이미지의 최대 크기 10Mb로 용량 제한
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+DefaultFileRenamePolicy cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 52 in the jsp file: /notice/notice_modify_action.jsp
+cal cannot be resolved
+49: 			String sql = "UPDATE notice set "
+50: 				   	+ 	 "notice_title ='" + Notice_Title
+51: 					+	 "', notice_content = '" + Notice_Content
+52: 					+ 	 ", notice_date ='" + sdf.format(cal.getTime())
+53: 					+	 "' where notice_uid ='" + noticeid
+54: 					+	 "'";
+55: 			
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 16 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+13: 	int max = 1024 * 1024 * 80; //업로드 받을 이미지의 최대 크기 10Mb로 용량 제한
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+MultipartRequest cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 17 in the jsp file: /notice/notice_modify_action.jsp
+DefaultFileRenamePolicy cannot be resolved to a type
+14: 	String encoding = "UTF-8"; //인코딩
+15: 
+16: 	MultipartRequest Notice_multi = null;
+17: 	Notice_multi = new MultipartRequest(request, SavePath, max, encoding, new DefaultFileRenamePolicy());
+18: 
+19: 	if(ss == null)
+20: 	{
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 40 in the jsp file: /notice/notice_modify_action.jsp
+SimpleDateFormat cannot be resolved to a type
+37: 	ResultSet rs = null;
+38: 	
+39: 	try{
+40: 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+41: 		
+42: 		String jdbcUrl = "jdbc:mysql://localhost:3306/yhpj";
+43: 		String dbId="yhpj";
+
+
+An error occurred at line: 52 in the jsp file: /notice/notice_modify_action.jsp
+cal cannot be resolved
+49: 			String sql = "UPDATE notice set "
+50: 				   	+ 	 "notice_title ='" + Notice_Title
+51: 					+	 "', notice_content = '" + Notice_Content
+52: 					+ 	 ", notice_date ='" + sdf.format(cal.getTime())
+53: 					+	 "' where notice_uid ='" + noticeid
+54: 					+	 "'";
+55: 			
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 15:06:21.722 심각 [http-nio-8215-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [79] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: 295 in the jsp file: /notice/notice_modify_form.jsp
+SimpleDateFormat cannot be resolved to a type
+292: 				Class.forName("com.mysql.jdbc.Driver"); 
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+
+
+An error occurred at line: 295 in the jsp file: /notice/notice_modify_form.jsp
+SimpleDateFormat cannot be resolved to a type
+292: 				Class.forName("com.mysql.jdbc.Driver"); 
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+
+
+An error occurred at line: 296 in the jsp file: /notice/notice_modify_form.jsp
+Calendar cannot be resolved to a type
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+299: 				pstmt = conn.prepareStatement(NoticeSQL);
+
+
+An error occurred at line: 296 in the jsp file: /notice/notice_modify_form.jsp
+Calendar cannot be resolved
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+299: 				pstmt = conn.prepareStatement(NoticeSQL);
+
+
+An error occurred at line: [562] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [579] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [79] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: 295 in the jsp file: /notice/notice_modify_form.jsp
+SimpleDateFormat cannot be resolved to a type
+292: 				Class.forName("com.mysql.jdbc.Driver"); 
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+
+
+An error occurred at line: 295 in the jsp file: /notice/notice_modify_form.jsp
+SimpleDateFormat cannot be resolved to a type
+292: 				Class.forName("com.mysql.jdbc.Driver"); 
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+
+
+An error occurred at line: 296 in the jsp file: /notice/notice_modify_form.jsp
+Calendar cannot be resolved to a type
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+299: 				pstmt = conn.prepareStatement(NoticeSQL);
+
+
+An error occurred at line: 296 in the jsp file: /notice/notice_modify_form.jsp
+Calendar cannot be resolved
+293: 				conn = DriverManager.getConnection(jdbcUrl, dbId, dbPass); 
+294: 
+295: 				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+296: 				Calendar cal = Calendar.getInstance();
+297: 
+298: 				String NoticeSQL = "SELECT * FROM notice WHERE notice_uid=?";
+299: 				pstmt = conn.prepareStatement(NoticeSQL);
+
+
+An error occurred at line: [562] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [579] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 15:07:40.434 심각 [http-nio-8215-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [97] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [593] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [610] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [97] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+An error occurred at line: [593] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [610] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 15:15:49.559 심각 [http-nio-8215-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [615] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+An error occurred at line: [616] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [615] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "Finally" to complete TryStatement
+
+An error occurred at line: [616] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/notice/notice_005fmodify_005fform_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 15:17:12.526 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /notice/notice_modify_form.jsp at line 20
+
+17:     <%
+18: 		request.setCharacterEncoding("UTF-8");
+19: 	
+20: 		int pg = Integer.parseInt(request.getParameter("pg"));
+21: 		int noticeid = Integer.parseInt(request.getParameter("noticeid")); 
+22: 		
+23: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.notice.notice_005fmodify_005fform_jsp._jspService(notice_005fmodify_005fform_jsp.java:149)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 15:44:57.676 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 62 in the jsp file: /notice/notice_modify_action.jsp
+cal cannot be resolved
+59: 		String sql = "UPDATE notice set "
+60: 				   	+ 	 "notice_title ='" + Notice_Title
+61: 					+	 "', notice_content = '" + Notice_Content
+62: 					+ 	 ", notice_date ='" + sdf.format(cal.getTime())
+63: 					+	 "' where notice_uid ='" + noticeid
+64: 					+	 "'";
+65: 			
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 62 in the jsp file: /notice/notice_modify_action.jsp
+cal cannot be resolved
+59: 		String sql = "UPDATE notice set "
+60: 				   	+ 	 "notice_title ='" + Notice_Title
+61: 					+	 "', notice_content = '" + Notice_Content
+62: 					+ 	 ", notice_date ='" + sdf.format(cal.getTime())
+63: 					+	 "' where notice_uid ='" + noticeid
+64: 					+	 "'";
+65: 			
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 17:33:29.172 심각 [http-nio-8215-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_modify_action.jsp at line 7
+
+4: <%
+5: 	String ss = session.getAttribute("ss").toString();
+6: 	
+7: 	int boardid = Integer.parseInt(request.getParameter("boardid"));
+8: 	int pg = Integer.parseInt(request.getParameter("pg"));
+9: 	
+10: 	if(ss == null)
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.board.board_005freply_005fmodify_005faction_jsp._jspService(board_005freply_005fmodify_005faction_jsp.java:116)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:21:23.668 심각 [http-nio-8215-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /mypage/mypage.jsp at line 132
+
+129:   	<%
+130: 	//Map<String, String> articles = new HashMap<String,String>();
+131:   	Map<String, Object> article = new HashMap<>();
+132:   	String id = session.getAttribute("ss").toString();
+133:   	
+134:  	List<Map<String, String>> articles = new ArrayList<>();
+135:   	String id2 = session.getAttribute("ss").toString();
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.mypage.mypage_jsp._jspService(mypage_jsp.java:256)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:32:33.347 심각 [http-nio-8215-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_modify_action.jsp at line 7
+
+4: <%
+5: 	String ss = session.getAttribute("ss").toString();
+6: 	
+7: 	int boardid = Integer.parseInt(request.getParameter("boardid"));
+8: 	int pg = Integer.parseInt(request.getParameter("pg"));
+9: 	
+10: 	if(ss == null)
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.board.board_005freply_005fmodify_005faction_jsp._jspService(board_005freply_005fmodify_005faction_jsp.java:116)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:47:47.572 심각 [http-nio-8215-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_insert_action.jsp at line 17
+
+14: 	String encoding = "UTF-8"; //인코딩
+15: 	
+16: 	MultipartRequest BoardReply_multi = null;
+17: 	BoardReply_multi = new MultipartRequest(request, encoding);
+18: 	
+19: 	//connection객체 생성
+20: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalArgumentException: Not a directory: UTF-8
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:215)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:110)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:90)
+	at org.apache.jsp.board.board_005freply_005finsert_005faction_jsp._jspService(board_005freply_005finsert_005faction_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:48:24.142 심각 [http-nio-8215-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_insert_action.jsp at line 17
+
+14: 	String encoding = "UTF-8"; //인코딩
+15: 	
+16: 	MultipartRequest BoardReply_multi = null;
+17: 	BoardReply_multi = new MultipartRequest(request, encoding);
+18: 	
+19: 	//connection객체 생성
+20: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalArgumentException: Not a directory: UTF-8
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:215)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:110)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:90)
+	at org.apache.jsp.board.board_005freply_005finsert_005faction_jsp._jspService(board_005freply_005finsert_005faction_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:52:10.376 심각 [http-nio-8215-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_insert_action.jsp at line 18
+
+15: 	request.setCharacterEncoding("UTF-8"); //한글깨지지말라고
+16: 	
+17: 	MultipartRequest BoardReply_multi = null;
+18: 	BoardReply_multi = new MultipartRequest(request, encoding);
+19: 	
+20: 	//connection객체 생성
+21: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalArgumentException: Not a directory: UTF-8
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:215)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:110)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:90)
+	at org.apache.jsp.board.board_005freply_005finsert_005faction_jsp._jspService(board_005freply_005finsert_005faction_jsp.java:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:52:18.011 심각 [http-nio-8215-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_insert_action.jsp at line 18
+
+15: 	request.setCharacterEncoding("UTF-8"); //한글깨지지말라고
+16: 	
+17: 	MultipartRequest BoardReply_multi = null;
+18: 	BoardReply_multi = new MultipartRequest(request, encoding);
+19: 	
+20: 	//connection객체 생성
+21: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalArgumentException: Not a directory: UTF-8
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:215)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:110)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:90)
+	at org.apache.jsp.board.board_005freply_005finsert_005faction_jsp._jspService(board_005freply_005finsert_005faction_jsp.java:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:53:46.284 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_insert_action.jsp at line 18
+
+15: 	request.setCharacterEncoding("UTF-8"); //한글깨지지말라고
+16: 	
+17: 	MultipartRequest BoardReply_multi = null;
+18: 	BoardReply_multi = new MultipartRequest(request, encoding);
+19: 	
+20: 	//connection객체 생성
+21: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalArgumentException: Not a directory: UTF-8
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:215)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:110)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:90)
+	at org.apache.jsp.board.board_005freply_005finsert_005faction_jsp._jspService(board_005freply_005finsert_005faction_jsp.java:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 18:54:15.235 심각 [http-nio-8215-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_insert_action.jsp at line 18
+
+15: 	request.setCharacterEncoding("UTF-8"); //한글깨지지말라고
+16: 	
+17: 	
+18: 	MultipartRequest BoardReply_multi = new MultipartRequest(request, encoding);
+19: 	
+20: 	//connection객체 생성
+21: 		Connection conn = null;
+
+
+Stacktrace:] with root cause
+ java.lang.IllegalArgumentException: Not a directory: UTF-8
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:215)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:110)
+	at com.oreilly.servlet.MultipartRequest.<init>(MultipartRequest.java:90)
+	at org.apache.jsp.board.board_005freply_005finsert_005faction_jsp._jspService(board_005freply_005finsert_005faction_jsp.java:135)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 19:11:52.029 심각 [http-nio-8215-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /board/board_reply_modify_action.jsp at line 7
+
+4: <%
+5: 	String ss = session.getAttribute("ss").toString();
+6: 	
+7: 	int boardid = Integer.parseInt(request.getParameter("boardid"));
+8: 	int pg = Integer.parseInt(request.getParameter("pg"));
+9: 	
+10: 	if(ss == null)
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.board.board_005freply_005fmodify_005faction_jsp._jspService(board_005freply_005fmodify_005faction_jsp.java:116)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 20:38:51.088 심각 [http-nio-8215-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			rank++;
+191: 		        		<% else if(rank > 0) { %>
+192: 		        			<td class="icofont-crown"><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			rank++;
+191: 		        		<% else if(rank > 0) { %>
+192: 		        			<td class="icofont-crown"><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 20:39:51.933 심각 [http-nio-8215-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			rank++;
+191: 		        		<% else{ %>
+192: 		        			<td><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			rank++;
+191: 		        		<% else{ %>
+192: 		        			<td><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 20:39:56.034 심각 [http-nio-8215-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			rank++;
+191: 		        		<% else{ %>
+192: 		        			<td><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			rank++;
+191: 		        		<% else{ %>
+192: 		        			<td><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 20:40:40.236 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { rank++; %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			
+191: 		        		<% else{  rank++;%>
+192: 		        			<td><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 189 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Statement
+186: 			        		if(name != null) {%> --%>
+187: 			        	<tr>
+188: 			        	<% if(rank == 0) { rank++; %>
+189: 		        			<td class="icofont-crown"><%=rank %>등</td>
+190: 		        			
+191: 		        		<% else{  rank++;%>
+192: 		        			<td><%=rank %>등</td>
+
+
+An error occurred at line: [552] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [553] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 20:41:14.531 심각 [http-nio-8215-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 202 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+199: 							} */
+200: 				 }
+201: 			
+202: 			}catch(Exception e){
+203: 				e.printStackTrace();
+204: 			}finally{
+205: 				if(rs !=null)
+
+
+An error occurred at line: [542] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [543] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 202 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+199: 							} */
+200: 				 }
+201: 			
+202: 			}catch(Exception e){
+203: 				e.printStackTrace();
+204: 			}finally{
+205: 				if(rs !=null)
+
+
+An error occurred at line: [542] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [543] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Nov-2020 20:45:06.304 심각 [http-nio-8215-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 209 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+206: 							} */
+207: 				 }
+208: 			
+209: 			}catch(Exception e){
+210: 				e.printStackTrace();
+211: 			}finally{
+212: 				if(rs !=null)
+
+
+An error occurred at line: [555] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [556] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 209 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+206: 							} */
+207: 				 }
+208: 			
+209: 			}catch(Exception e){
+210: 				e.printStackTrace();
+211: 			}finally{
+212: 				if(rs !=null)
+
+
+An error occurred at line: [555] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [556] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

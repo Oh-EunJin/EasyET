@@ -1,0 +1,212 @@
+15-Nov-2020 00:50:57.798 심각 [http-nio-8215-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 129 in the jsp file: /login/login_id_action.jsp
+Syntax error, insert "Finally" to complete TryStatement
+126:     <% if(b_Search ==false){%>
+127:       <td><div class="text-center"><button type="button" onClick="location.href='/login/login_id.jsp'">다시 입력</button></div</td>
+128:        <% }    
+129:     }       
+130:     %><div class="text-center"><td><button type="submit" onClick="self.close()">닫기</button></div>
+131:   </td>
+132:   </tr>
+
+
+An error occurred at line: [378] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [380] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [380] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [381] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [381] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [389] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [389] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [392] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [393] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 129 in the jsp file: /login/login_id_action.jsp
+Syntax error, insert "Finally" to complete TryStatement
+126:     <% if(b_Search ==false){%>
+127:       <td><div class="text-center"><button type="button" onClick="location.href='/login/login_id.jsp'">다시 입력</button></div</td>
+128:        <% }    
+129:     }       
+130:     %><div class="text-center"><td><button type="submit" onClick="self.close()">닫기</button></div>
+131:   </td>
+132:   </tr>
+
+
+An error occurred at line: [378] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [380] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [380] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [381] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [381] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [389] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [389] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [392] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [393] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/login/login_005fid_005faction_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+15-Nov-2020 01:50:18.264 심각 [http-nio-8215-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 113 in the jsp file: /join/join_form.jsp
+Type mismatch: cannot convert from void to String
+110:    String s_Search="아이디를 찾았습니다.";
+111:    String s_id="아이디는 : ";
+112:    boolean b_Search = true;
+113:    user_id = %>d <%;
+114: try{
+115:  
+116:  pstmt = conn.prepareStatement(sql);
+
+
+An error occurred at line: 117 in the jsp file: /join/join_form.jsp
+user_tel cannot be resolved to a variable
+114: try{
+115:  
+116:  pstmt = conn.prepareStatement(sql);
+117:  pstmt.setString(1, user_tel);
+118:  rs=pstmt.executeQuery();
+119:  
+120:  while(rs.next()){
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 113 in the jsp file: /join/join_form.jsp
+Type mismatch: cannot convert from void to String
+110:    String s_Search="아이디를 찾았습니다.";
+111:    String s_id="아이디는 : ";
+112:    boolean b_Search = true;
+113:    user_id = %>d <%;
+114: try{
+115:  
+116:  pstmt = conn.prepareStatement(sql);
+
+
+An error occurred at line: 117 in the jsp file: /join/join_form.jsp
+user_tel cannot be resolved to a variable
+114: try{
+115:  
+116:  pstmt = conn.prepareStatement(sql);
+117:  pstmt.setString(1, user_tel);
+118:  rs=pstmt.executeQuery();
+119:  
+120:  while(rs.next()){
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

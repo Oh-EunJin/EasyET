@@ -1,0 +1,1675 @@
+07-Nov-2020 16:21:47.780 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /health/health_rec_list.jsp at line 293
+
+290:   
+291:   <%
+292:   	//session.setAttribute("ss","test@naver.com");
+293: 	String ss = session.getAttribute("ss").toString();
+294: 	String myid = null;
+295: 	String myname = null;
+296: 	
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.health.health_005frec_005flist_jsp._jspService(health_005frec_005flist_jsp.java:409)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 18:46:58.060 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /health/health_form.jsp at line 292
+
+289:   
+290:   <%
+291:   	//session.setAttribute("ss","test@naver.com");
+292: 	String ss = session.getAttribute("ss").toString();
+293: 	String myid = null;
+294: 	String myname = null;
+295: 	
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.health.health_005fform_jsp._jspService(health_005fform_jsp.java:408)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:27:35.899 심각 [http-nio-8215-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+The local variable name may not have been initialized
+162: 		<hr>
+163:         <table class="table table-hover table-striped">
+164:         	<tr>
+165:         		<td>아이디<br><%=name %></td>
+166:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+167:         		<td>증가한 골격근량<br><%=smm_get %></td>
+168:         	</tr>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+The local variable name may not have been initialized
+162: 		<hr>
+163:         <table class="table table-hover table-striped">
+164:         	<tr>
+165:         		<td>아이디<br><%=name %></td>
+166:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+167:         		<td>증가한 골격근량<br><%=smm_get %></td>
+168:         	</tr>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:47:29.734 심각 [http-nio-8215-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 159 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+156:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+157:         		<td>증가한 골격근량<br><%=smm_get %></td>
+158:         	</tr>
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+
+
+An error occurred at line: 167 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+170: 		
+
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [373] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 159 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+156:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+157:         		<td>증가한 골격근량<br><%=smm_get %></td>
+158:         	</tr>
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+
+
+An error occurred at line: 167 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+170: 		
+
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [373] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:47:33.990 심각 [http-nio-8215-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 159 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+156:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+157:         		<td>증가한 골격근량<br><%=smm_get %></td>
+158:         	</tr>
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+
+
+An error occurred at line: 167 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+170: 		
+
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [373] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 159 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+156:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+157:         		<td>증가한 골격근량<br><%=smm_get %></td>
+158:         	</tr>
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+
+
+An error occurred at line: 167 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+170: 		
+
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [373] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:47:37.998 심각 [http-nio-8215-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 159 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+156:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+157:         		<td>증가한 골격근량<br><%=smm_get %></td>
+158:         	</tr>
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+
+
+An error occurred at line: 167 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+170: 		
+
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [373] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 159 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+156:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+157:         		<td>증가한 골격근량<br><%=smm_get %></td>
+158:         	</tr>
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+159: 			<% } %>
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+160: <%
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+161: finally{
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+162: 	if(rs !=null)
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+163: 		try{rs.close();}catch(SQLException sqle){}
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+
+
+An error occurred at line: 167 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+164: 	if(pstmt != null)
+165: 		try{pstmt.close();}catch(SQLException sqle){}
+166: 	if(conn != null)
+167: 		try{conn.close();}catch(SQLException sqle){}
+168: }
+169: %>	
+170: 		
+
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [373] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [384] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [386] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:49:06.751 심각 [http-nio-8215-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 146 in the jsp file: /honor/honor.jsp
+Syntax error, insert "Finally" to complete TryStatement
+143: 		Min_skeletal_muscle_mass = rs.getFloat(5);
+144: 		check_date = rs.getString(6);
+145:  	} */
+146: }
+147: %>
+148: 	<hr>
+149:         <table class="table table-hover table-striped">
+
+
+An error occurred at line: 156 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+153:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+154:         		<td>증가한 골격근량<br><%=smm_get %></td>
+155:         	</tr>
+156: 			<% } %>
+157: <%
+158: catch(Exception e){
+159: 	e.printStackTrace();
+
+
+An error occurred at line: 161 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+158: catch(Exception e){
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+169: 		
+
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [382] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [385] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 146 in the jsp file: /honor/honor.jsp
+Syntax error, insert "Finally" to complete TryStatement
+143: 		Min_skeletal_muscle_mass = rs.getFloat(5);
+144: 		check_date = rs.getString(6);
+145:  	} */
+146: }
+147: %>
+148: 	<hr>
+149:         <table class="table table-hover table-striped">
+
+
+An error occurred at line: 156 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+153:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+154:         		<td>증가한 골격근량<br><%=smm_get %></td>
+155:         	</tr>
+156: 			<% } %>
+157: <%
+158: catch(Exception e){
+159: 	e.printStackTrace();
+
+
+An error occurred at line: 161 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+158: catch(Exception e){
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+169: 		
+
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [382] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [385] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:49:10.816 심각 [http-nio-8215-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 146 in the jsp file: /honor/honor.jsp
+Syntax error, insert "Finally" to complete TryStatement
+143: 		Min_skeletal_muscle_mass = rs.getFloat(5);
+144: 		check_date = rs.getString(6);
+145:  	} */
+146: }
+147: %>
+148: 	<hr>
+149:         <table class="table table-hover table-striped">
+
+
+An error occurred at line: 156 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+153:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+154:         		<td>증가한 골격근량<br><%=smm_get %></td>
+155:         	</tr>
+156: 			<% } %>
+157: <%
+158: catch(Exception e){
+159: 	e.printStackTrace();
+
+
+An error occurred at line: 161 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+158: catch(Exception e){
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+169: 		
+
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [382] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [385] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 146 in the jsp file: /honor/honor.jsp
+Syntax error, insert "Finally" to complete TryStatement
+143: 		Min_skeletal_muscle_mass = rs.getFloat(5);
+144: 		check_date = rs.getString(6);
+145:  	} */
+146: }
+147: %>
+148: 	<hr>
+149:         <table class="table table-hover table-striped">
+
+
+An error occurred at line: 156 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+153:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+154:         		<td>증가한 골격근량<br><%=smm_get %></td>
+155:         	</tr>
+156: 			<% } %>
+157: <%
+158: catch(Exception e){
+159: 	e.printStackTrace();
+
+
+An error occurred at line: 161 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+158: catch(Exception e){
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+169: 		
+
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [382] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [385] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-Nov-2020 23:49:16.037 심각 [http-nio-8215-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 146 in the jsp file: /honor/honor.jsp
+Syntax error, insert "Finally" to complete TryStatement
+143: 		Min_skeletal_muscle_mass = rs.getFloat(5);
+144: 		check_date = rs.getString(6);
+145:  	} */
+146: }
+147: %>
+148: 	<hr>
+149:         <table class="table table-hover table-striped">
+
+
+An error occurred at line: 156 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+153:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+154:         		<td>증가한 골격근량<br><%=smm_get %></td>
+155:         	</tr>
+156: 			<% } %>
+157: <%
+158: catch(Exception e){
+159: 	e.printStackTrace();
+
+
+An error occurred at line: 161 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+158: catch(Exception e){
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+169: 		
+
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [382] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [385] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 146 in the jsp file: /honor/honor.jsp
+Syntax error, insert "Finally" to complete TryStatement
+143: 		Min_skeletal_muscle_mass = rs.getFloat(5);
+144: 		check_date = rs.getString(6);
+145:  	} */
+146: }
+147: %>
+148: 	<hr>
+149:         <table class="table table-hover table-striped">
+
+
+An error occurred at line: 156 in the jsp file: /honor/honor.jsp
+Syntax error, insert "}" to complete Block
+153:         		<td>감량한 체중<br><%=weight_loss %>kg</td>
+154:         		<td>증가한 골격근량<br><%=smm_get %></td>
+155:         	</tr>
+156: 			<% } %>
+157: <%
+158: catch(Exception e){
+159: 	e.printStackTrace();
+
+
+An error occurred at line: 161 in the jsp file: /honor/honor.jsp
+rs cannot be resolved to a variable
+158: catch(Exception e){
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 162 in the jsp file: /honor/honor.jsp
+rs cannot be resolved
+159: 	e.printStackTrace();
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+
+
+An error occurred at line: 163 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved to a variable
+160: }finally{
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+
+
+An error occurred at line: 164 in the jsp file: /honor/honor.jsp
+pstmt cannot be resolved
+161: 	if(rs !=null)
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+
+
+An error occurred at line: 165 in the jsp file: /honor/honor.jsp
+conn cannot be resolved to a variable
+162: 		try{rs.close();}catch(SQLException sqle){}
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+
+
+An error occurred at line: 166 in the jsp file: /honor/honor.jsp
+conn cannot be resolved
+163: 	if(pstmt != null)
+164: 		try{pstmt.close();}catch(SQLException sqle){}
+165: 	if(conn != null)
+166: 		try{conn.close();}catch(SQLException sqle){}
+167: }
+168: %>	
+169: 		
+
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on tokens, delete these tokens
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: [371] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error, insert ";" to complete Statement
+
+An error occurred at line: [372] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [382] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [383] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+t cannot be resolved to a variable
+
+An error occurred at line: [385] in the generated java file: [/yhpj/tomcat/work/yhpj/yhpj.cafe24.com/ROOT/org/apache/jsp/honor/honor_jsp.java]
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

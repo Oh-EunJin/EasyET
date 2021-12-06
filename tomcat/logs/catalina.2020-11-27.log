@@ -1,0 +1,3 @@
+27-Nov-2020 17:38:42.827 정보 [yhpj.cafe24.com-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /yhpj/tomcat/webapps/assets
+27-Nov-2020 17:38:42.985 정보 [yhpj.cafe24.com-startStop-3] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Nov-2020 17:38:42.989 정보 [yhpj.cafe24.com-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /yhpj/tomcat/webapps/assets has finished in 162 ms
